@@ -7,7 +7,7 @@ WORKDIR /tmp
 RUN apk add --no-cache \
       git \
       ca-certificates && \
-      wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_${hugo_vesion}_Linux-64bit.tar.gz && \
+      wget https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_extended_${hugo_vesion}_Linux-64bit.tar.gz && \
       tar zxvf hugo_extended_${hugo_vesion}_Linux-64bit.tar.gz && \
       chmod +x hugo && \
       mv hugo /usr/bin/hugo &&  \
